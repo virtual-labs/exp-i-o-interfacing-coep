@@ -1,4 +1,4 @@
-### Procedure:
+### Procedure
 
 - The first user must select the GPIO pin for LED.
 - Then Select the GPIO pin of the Push button.
