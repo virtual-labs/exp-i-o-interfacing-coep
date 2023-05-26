@@ -25,6 +25,3 @@ In current Sinking Operation, Current flows into the device. In this method, But
 
 ![*](images/Diag2.png)
 In current Sourcing Operation, Current flows out of the device.In this method, Button is PUSHED-TO-LOW and start blinking
-
-
-### Link your theory in here
