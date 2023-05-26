@@ -1,5 +1,5 @@
 
-### Theory:
+### Theory
 The PIC18 series microcontroller is a popular microcontroller family that is commonly used in various embedded systems applications due to its low power consumption and ease of programming. The GPIO (General Purpose Input Output) pins of a microcontroller are used to connect external devices such as LEDs, switches, sensors, etc. In this experiment, we will be using a push button switch to control the blinking of an LED connected to a GPIO pin of the PIC18 microcontroller.
 
 When the push button switch is pressed, the input pin of the microcontroller is pulled high. The microcontroller's program then detects the change in state of the input pin and toggles the output pin connected to the LED, thereby turning it on. When the push button switch is released, the input pin returns to its initial state, and the microcontroller program detects this and turns off the LED. 
@@ -17,7 +17,7 @@ PORTA is an 8-bit wide, bidirectional port. The corresponding Data Direction reg
 The Data Latch register (LATA) is also memory mapped. Read-modify-write operations on the LATA register read and write the latched output value for PORTA.
 
 
-### Schematic:
+### Schematic
 Components used in simulation:
 -	Microcontroller: PIC18F4550
 -	Aqua color LED
@@ -26,15 +26,16 @@ Components used in simulation:
 
 In this Example schematic, the push button is connected to pin RC0 of PORT C and LED is connected across RD0 of the PORT D of the microcontroller.
 
-### Current Sinking Operation:
+### Current Sinking Operation
 
 ![8](images/LEC_Puch_button_sinking1.png)
 
 In the current Sinking Operation, Current flows into the device. In this method, the Button is PUSHED-TO-HIGH and LED starts blinking. 
 
-### Current Sourcing Operation:	
+### Current Sourcing Operation
 
 ![*](images/LED_push_button_sourcing.png)
+
 In the current Sourcing Operation, Current flows out of the device. In this method, the Button is PUSHED-TO-LOW and starts blinking.
 
 
