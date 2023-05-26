@@ -10,7 +10,7 @@ Overall, this experiment will demonstrate the fundamental concept of interfacing
 
 Now, for programming the inputs and outputs of PIC series microcontroller. For setting the peripheral to input and output, the necessary registers are PORTx, LATx, and TRISx.
 
-Let’s consider an example for PORT A:
+Let's consider an example for PORT A:
 
 PORTA is an 8-bit wide, bidirectional port. The corresponding Data Direction register is TRISA. Setting a TRISA bit (= 1) will make the corresponding PORTA pin an input (i.e., put the corresponding output driver in a high-impedance mode). Clearing a TRISA bit (= 0) will make the corresponding PORTA pin an output (i.e., put the contents of the output latch on the selected pin)
 
