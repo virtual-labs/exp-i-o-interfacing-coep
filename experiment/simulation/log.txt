@@ -1,7 +1,0 @@
-exp_2_code.asm:308:Message[1301] Using default destination of 0 (Access Bank).
-exp_2_code.asm:315:Message[1301] Using default destination of 0 (Access Bank).
-exp_2_code.asm:320:Message[1301] Using default destination of 0 (Access Bank).
-exp_2_code.asm:322:Message[1301] Using default destination of 0 (Access Bank).
-exp_2_code.asm:326:Message[1301] Using default destination of 0 (Access Bank).
-exp_2_code.asm:330:Message[1301] Using default destination of 0 (Access Bank).
-message: Using default linker script "/usr/share/gputils/lkr/18f4550_g.lkr".
