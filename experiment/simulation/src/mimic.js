@@ -1133,7 +1133,7 @@ switchTopImg.mousedown( function() {
 		switchTopImg.animate({transform: ['t',0, 10]}, 100);
 		$("#plot").prop("hidden",false);
 		start(interval_plot1,onTime1,offTime1,);
-		myInterval = setInterval(blink, 100); 
+		//myInterval = setInterval(blink, 100); 
 		
 	}else{
 		alert("Please Check Connection Status.");
@@ -1142,7 +1142,7 @@ switchTopImg.mousedown( function() {
 
 switchTopImg.mouseup( function() {
 	cntVal=1;
-	clearInterval(myInterval);
+	//clearInterval(myInterval);
 //		console.log("..............");	
 	setRedflag=false;
 	if(statusFlag==true){

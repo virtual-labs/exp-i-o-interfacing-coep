@@ -2,7 +2,7 @@
 //function mainPage1(){
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
-     $("#canvas-div1").html('');
+     //$("#canvas-div1").html('');
       $("#centerText1").html('DIAGRAM');
       $("#centerText2").html('CONFIGURATION');
  			//var htm = '<center><img src="images/chipImg.png" class="img-fluid" style="width: 80%;" ></center>'
