@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is the purpose of the push button in this project?",
+      "question": "1) What is the purpose of the push button in this project?",
       "answers": {
         "a": "To provide power to the LED",
         "b": "To control the blinking frequency of the LED",
@@ -14,7 +14,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What is the role of the pull-up resistor in this project?",
+      "question": "2) What is the role of the pull-up resistor in this project?",
       "answers": {
         "a": "To protect the microcontroller from overvoltage",
         "b": "To provide a path to ground for the LED",
@@ -27,7 +27,7 @@
     },
 	
 	{
-      "question": "How did you determine the appropriate value for the pull-up resistor?",
+      "question": "3) How did you determine the appropriate value for the pull-up resistor?",
       "answers": {
         "a": "By trial and error",
         "b": "By consulting the datasheet for the microcontroller",
@@ -40,7 +40,7 @@
     },
 	
 	{
-      "question": "What debouncing technique did you use in this project?",
+      "question": "4) What debouncing technique did you use in this project?",
       "answers": {
         "a": "Software debouncing",
         "b": "Hardware debouncing",
@@ -53,7 +53,7 @@
     },
 	
 	{
-      "question": "What is the purpose of the delay function in this project?",
+      "question": "5) What is the purpose of the delay function in this project?",
       "answers": {
         "a": "To ensure that the LED blinks at a steady frequency",
         "b": "To prevent the microcontroller from overheating",
@@ -66,7 +66,7 @@
     },
 	
 	{
-      "question": "How would you modify the code to increase the blinking frequency of the LED?",
+      "question": "6) How would you modify the code to increase the blinking frequency of the LED?",
       "answers": {
         "a": "Decrease the value of the delay function",
         "b": "Increase the value of the delay function",
@@ -79,7 +79,7 @@
     },
 	
 	{
-      "question": "What is the purpose of the resistor in series with the LED?",
+      "question": "7) What is the purpose of the resistor in series with the LED?",
       "answers": {
         "a": "To limit the current through the LED",
         "b": "To protect the microcontroller from overvoltage",
@@ -92,7 +92,7 @@
     },
 	
 	{
-      "question": "What challenges did you face during this project, and how did you overcome them?",
+      "question": "8) What challenges did you face during this project, and how did you overcome them?",
       "answers": {
         "a": "Poor contact between the push button and the breadboard, solved by checking and fixing the wiring",
         "b": "Incorrectly calculating resistor values, solved by referring to the datasheet and online resources",
@@ -105,7 +105,7 @@
     },
 	
 	{
-      "question": "What is the main advantage of using a microcontroller to control the LED blinking?",
+      "question": "9) What is the main advantage of using a microcontroller to control the LED blinking?",
       "answers": {
         "a": "Precise control over the blinking frequency",
         "b": "More reliable than using discrete components",
@@ -118,7 +118,7 @@
     },
 	
 	{
-      "question": "How could you modify the circuit to control multiple LEDs with the push button?",
+      "question": "10) How could you modify the circuit to control multiple LEDs with the push button?",
       "answers": {
         "a": "Use a larger resistor in series with the LEDs",
         "b": "Add more push buttons to the circuit",
