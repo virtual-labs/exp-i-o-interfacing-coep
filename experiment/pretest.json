@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is an embedded system?",
+      "question": "1) What is an embedded system?",
       "answers": {
         "a": "A system that can be connected to the internet",
         "b": "A system that is built into a larger device or machine",
@@ -13,7 +13,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following should a microcontroller at-least should consist of?",
+      "question": "2) Which of the following should a microcontroller at-least should consist of?",
       "answers": {
         "a": "CPU, ROM, I/O ports, and timers",
         "b": " RAM, ROM, I/O ports, and timers",
@@ -24,7 +24,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following file extension that is loaded in a microcontroller for executing any instruction?",
+      "question": "3) Which of the following file extension that is loaded in a microcontroller for executing any instruction?",
       "answers": {
         "a": ".c",
         "b": ".txt",
@@ -37,7 +37,7 @@
 	
 	
 	{
-      "question": "Which of the following microcontroller doesn’t match with its architecture below?",
+      "question": "4) Which of the following microcontroller doesn’t match with its architecture below?",
       "answers": {
         "a": "ARM7 – Von Neumann",
         "b": "Microchip PIC – Harvard",
@@ -49,7 +49,7 @@
     },
 	
 	{
-      "question": "What is the difference between a microcontroller and a microprocessor?",
+      "question": "5) What is the difference between a microcontroller and a microprocessor?",
       "answers": {
         "a": " A microcontroller has more processing power than a microprocessor ",
         "b": "A microcontroller contains both memory and input/output peripherals, whereas a microprocessor does not ",
