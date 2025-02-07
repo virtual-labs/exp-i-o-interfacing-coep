@@ -20,6 +20,10 @@
 <link rel="stylesheet" href="css/transducer.css">
 <link rel="stylesheet" href="css/toastr.min.css">
 <style type="text/css">
+	
+#body {
+	 overflow-x: hidden;
+}
 
 #code-header {
             margin: 0;
@@ -46,7 +50,7 @@
 </style>
 </head>
 
-<body bgproperties="fixed">
+<body id="body" bgproperties="fixed">
 
 	<header>
 		<img class="Coeplogo" src='images/COEPlogo.png' /> 
@@ -65,7 +69,7 @@
 	<button type="button" class="btn btn-danger button5" id="procedure" data-toggle="modal" data-target="#readProcedureModal"><b>READ PROCEDURE</b></button>
 	</div>
 	</div>
-	<div class="row container-fluid" style="margin-top: 5px" id="mainDiv">
+	<div class="row container-fluid"  style="margin-top: -20px" id="mainDiv">
 
 		<div class="col-lg-6" id="canvas">
 			<div class="panel panel-primary">
@@ -75,10 +79,10 @@
 				<div class="panel-body" id="plot" hidden> 
 
 				</div>
-				<div class="panel-body" id="canvas-div1">
+				<div class="panel-body" style="padding: 0px;" id="canvas-div1">
 				<img src="images/mainpageImg.png" style="width: 100%;height:100%"   class="img-fluid" ></img>
 				</div>
-				<div class="panel-body" id="canvas-div">
+				<div class="panel-body" style="padding: 0px;" id="canvas-div">
 				<div class="row">
 				<div class="col-lg-12">
 				
@@ -148,14 +152,14 @@
 
 <center id="modelTitle"><b>Mimic</b></center>
 <ol>
-<li>Click on selected output pin terminal (red circle) and click on anode terminal (red circle) for connection of the selected output pin to anode. OR click on anode terminal (red circle) and click on selected output pin terminal (red circle) for connect the anode to selected output pin.</li>
-<li>Click on cathode terminal (red circle) and click on resistor terminal (red circle) for connection of cathode to resister. OR click on resistor terminal (red circle) and click on cathode terminal (red circle) for connection of resister to cathode.</li>
-<li>Click on selected Input pin terminal (blue circle) and click on switch terminal (blue circle) for connection of the selected input pin to switch terminal. OR click on switch terminal (blue circle) and click on selected input pin terminal (blue circle) for connect the switch terminal to selected input pin.</li>
-<li>Click on "Check Connection" button.</li>
-<li>If you see alert like "Wrong Connection. Please Try Again." click on "Reset Connection" button and follow step 1,2,3 and 4.</li>
-<li>If you see alert like "Connection Established Successfully. Now Click on Switch." Click on Switch.</li>
-<li>Output LED is on. now observe the square wave graph.</li>
-<li>Click on "REFRESH" button. to Re-executing the experiment.</li>
+<li>Connect the Output Pin to the Anode.</li>
+<li>Click on the cathode terminal (red circle) and then click on the resistor terminal (red circle) to connect the cathode with the resistor or vice versa.</li>
+<li>Click on the selected input pin terminal (blue circle) and then click on the switch terminal (blue circle) to connect the input pin with the switch terminal or vice versa.</li>
+<li>Click on the "Check Connection" button.</li>
+<li>If connection is wrong, click on "Reset Connection" button and follow steps 1, 2, 3, and 4 again.</li>
+<li>If connection is successful, click on Switch available on the screen with black color and hold the switch for a few seconds. </li>
+<li>While holding the switch, Output LED is on. Observe the square wave graph to see how the output changes until you complete the observation.</li>
+<li>Click on the "REFRESH" button to re-execute the experiment.</li>
 </ol>
       </div>
       <div class="modal-footer">
@@ -185,12 +189,12 @@ var config = {
 };
 	var layout = {
 	  responsive: true,
-	  width: 670,
-	  height: 300,
+	  width: 600,
+	  height: 250,
 	  title: 'Square Wave Graph',
 	  xaxis: {
 	    range: [0, 10],
-	    title: 'Time (mS)'
+	    title: 'Time (ms)'
 	  },
 	  yaxis: {
 	    range: [-0.2, 6.4],
@@ -229,12 +233,12 @@ var config = {
 };
 	var layout = {
 	  responsive: true,
-	  width: 670,
-	  height: 300,
+	  width: 600,
+	  height: 250,
 	  title: 'Square Wave Graph',
 	  xaxis: {
 	    range: [0, 10],
-	    title: 'Time (mS)'
+	    title: 'Time (ms)'
 	  },
 	  yaxis: {
 	    range: [-0.2, 6.4],
@@ -255,7 +259,7 @@ var config = {
 	  } else {    
 	    y = 5;
 //	     LedImg1.remove();
-	    LedImg2=paper.image("images/onDiodefinalPreview.png", 285, 95, 85, 85);
+	    LedImg2=paper.image("images/ON_aquaLed2.png", 285, 95, 85, 85);
 	    
 //	     Ledcircle.attr({ fill:'red'});
 	  }
@@ -264,7 +268,7 @@ var config = {
 	    Plotly.relayout('plot', {
 	      xaxis: {
 	        range: [time-10, time],
-			title: 'Time (mS)'
+			title: 'Time (ms)'
 	      }
 	    });
 	  }
@@ -300,7 +304,7 @@ var config = {
 	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 <script type="text/javascript" src="lib/raphael.js"></script>
 <script type="text/javascript" src="lib/raphael.min.js"></script>
-<scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
