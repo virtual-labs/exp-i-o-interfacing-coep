@@ -9,13 +9,14 @@
 - step 6 : Click on "COMPILE" button to compile code.
 - step 7 : Click on "EXECUTE" button to execute code and goto mimic.
 - step 8 : If you want to download code click on "DOWNLOAD" button.
-- step 9 : The MIMIC will open on left side of screen. 
-- step 10 : Click on selected output pin terminal(red circle) and click on anode terminal(red circle) for connection of the selected output pin to anode. OR click on anode terminal(red circle) and click on selected output pin terminal(red circle) for connect the anode to selected output pin.
-- step 11 : Click on cathode terminal(red circle) and click on resistor terminal(red circle) for connection of cathode to resister. OR click on resistor terminal(red circle) and click on cathode terminal(red circle) for connection of resister to cathode.
-- step 12 : Click on selected Input pin terminal(blue circle) and click on switch terminal(blue circle) for connection of the selected input pin to switch terminal. OR click on switch terminal(blue circle) and click on selected input pin terminal(blue circle) for connect the switch terminal to selected input pin.
+- step 9 : The MIMIC will open on left side of screen.
+ 
+- step 10 : Connect the Output Pin to the Anode.
+- step 11 : Click on the cathode terminal (red circle) and then click on the resistor terminal (red circle) to connect the cathode with the resistor or vice versa.
+- step 12 : Click on the selected input pin terminal (blue circle) and then click on the switch terminal (blue circle) to connect the input pin with the switch terminal or vice versa.
 - step 13 : Click on "Check Connection" button.
-- step 14 : If you see alert like "Wrong Connection. Please Try Again." click on "Reset Connection" button and follow step 10,11,12 and 13.
-- step 15 : If you see alert like "Connection Established Successfully. Now Click on Switch." Click on Switch.
-- step 16 : Output LED is on. now observe the square wave graph.
-- step 17 : Click on "REFRESH" button. to Re-executing the experiment.
+- step 14 : If connection is wrong, click on "Reset Connection" button and follow steps  10, 11, 12 and 13.
+- step 15 : If connection is successful, click on Switch available on the screen with black color and hold the switch for a few seconds.
+- step 16 : While holding the switch, Output LED is on. Observe the square wave graph to see how the output changes until you complete the observation.
+- step 17 : Click on "REFRESH" button to re-executing the experiment.
 
