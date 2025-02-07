@@ -1103,20 +1103,27 @@ function blink() {
 //                console.log("cntVal = "+cntVal);
 }
 
+var switchpress='';
+var arrowImg;
+var arrowImg1;		
 var statusFlag=false;
 checkStatus.click(function(){
-//console.log("anodeflg"+anodeflg+", pinval="+pinVal+ ",pinname =" + pinName+", RcircleFlag="+RcircleFlag+", cathodFlag="+cathodFlag +", IpinVal="+IpinVal+", inputpinName="+inputpinName);
 	
+//console.log("anodeflg"+anodeflg+", pinval="+pinVal+ ",pinname =" + pinName+", RcircleFlag="+RcircleFlag+", cathodFlag="+cathodFlag +", IpinVal="+IpinVal+", inputpinName="+inputpinName);
+
 	if(anodeflg==1 && pinVal==pinName && RcircleFlag==1 && cathodFlag==1 && switchCircleFlag==1 && IpinVal==inputpinName){
 		statusFlag=true;				
 //		$("#plot").html("");
 //		$("#plot").prop("hidden",false);
 //		start();
-		alert("Connection Established Successfully.Now Click on Switch.");		
+		alert("Connection Established Successfully.Now Click on Switch.");	
+		switchpress=paper.text(x+365,y+3,"Click and Hold the Switch").attr({'font-size':14});
+		arrowImg=paper.image("images/downArrowIMG.gif",x+385,y+13,50, 40);	
+		
 	}else if(RcircleFlag==0 && cathodFlag==0){
 		alert("First Establish Cathode Connection.")
 	}else if(anodeflg!=1 && pinVal!=pinName || IpinVal!=inputpinName){
-		alert("Connect the pin.")
+		alert("Connect the pin properly.")
 	}else{
 		alert("Wrong Connection. Please Try Again.");
 	}
@@ -1129,7 +1136,8 @@ var myInterval;
 switchTopImg.mousedown( function() { 
 	setRedflag=true;
 	if(statusFlag==true){
-		var arrowImg=paper.image("images/aDownPreview.png",x+388,y+4,40, 50);
+		switchpress.hide();
+		arrowImg.hide();
 		switchTopImg.animate({transform: ['t',0, 10]}, 100);
 		$("#plot").prop("hidden",false);
 		start(interval_plot1,onTime1,offTime1,);
@@ -1146,8 +1154,11 @@ switchTopImg.mouseup( function() {
 //		console.log("..............");	
 	setRedflag=false;
 	if(statusFlag==true){
+		switchpress.show();
+		arrowImg.show();		
+
 	var LedImg1=paper.image("images/offDiode.png", 285, 95, 85, 85);
-		var arrowImg=paper.rect(x+389,y+7,40, 45).attr({'stroke':'#fff','fill':'#fff'});
+//		var arrowImg11=paper.rect(x+389,y+7,40, 45).attr({'stroke':'#fff','fill':'#fff'});
 		switchTopImg.animate({transform: ['t',0, 0]}, 100);
 	$("#plot").prop("hidden",false);
 		reset();		
