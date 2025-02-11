@@ -172,7 +172,7 @@ cathode.click(function(){
 //	console.log("cathodFlag"+cathodFlag);
 	var cathode_connection_arr=[];	
 	if(verifyRcircleConnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 	}else{
 		if (diodSelection==0){
 		if(RcircleFlag==1){	
@@ -215,7 +215,7 @@ Rcircle.click(function(){
 	var cathode_connection_arr=[];	
 
 	if( crossCheckConnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 	}else{
 		if (diodSelection==0){
 			if(cathodFlag==1){	
@@ -327,11 +327,11 @@ d0Flag=1;
 checkflag1=1;
 //	d0Flag=1;
 	if(verifyAconnect==true){
-		alert("Already Connected.");
+		success("Already Connected.");
 	}else{
 		if (diodSelection==0){
 			if(checkflag2==1 || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-					alert("Click on 'Check Connection' Button.");
+					toastr.info("Click on 'Check Connection' Button.");
 				}else if(anodeflg==1){
 					anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 					anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -340,7 +340,7 @@ checkflag1=1;
 					anode_connection_arr2[0].animate({path :"M"+(x+284)+" "+(y+25)+"l -127 0 "},500, function(){
 							
 					anode_connection_arr2[0]=paper.path("M "+(x+158)+" "+(y+25)+ "l 0 0").attr({'stroke-width':3});
-					anode_connection_arr2[0].animate({path :"M"+(x+158)+" "+(y+25)+" l 0 33"},1000, function(){
+					anode_connection_arr2[0].animate({path :"M"+(x+158)+" "+(y+25)+" l 0 33"},500, function(){
 						vfyRD0Connect=true;	
 						pinName=1;
 						checkflag1=1;
@@ -351,13 +351,13 @@ checkflag1=1;
 		
 		}else{
 					if(checkflag2==1 || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-						alert("Click on 'Check Connection' Button.");
+						toastr.info("Click on 'Check Connection' Button.");
 					}else if(anodeflg==1){
 						anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 						anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -7.2 0 "},500, function(){
 								
 						anode_connection_arr2[0]=paper.path("M "+(x+158)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});
-						anode_connection_arr2[0].animate({path :"M"+(x+158)+" "+(y-19)+" l 0 76"},1000, function(){
+						anode_connection_arr2[0].animate({path :"M"+(x+158)+" "+(y-19)+" l 0 76"},500, function(){
 							vfyRD0Connect=true;	
 							pinName=1;
 							checkflag1=1;
@@ -372,11 +372,11 @@ terminalRD1.click(function(){
 d1Flag=1;
 checkflag2=1;
 	if(verifyAconnect==true){
-			alert("Already Connected.");
+			toastr.success("Already Connected.");
 	}else{
 		if (diodSelection==0){
 			if(checkflag1==1 || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-					alert("Click on 'Check Connection' Button.");
+					toastr.info("Click on 'Check Connection' Button.");
 			}else if(anodeflg==1){
 					anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 					anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -385,7 +385,7 @@ checkflag2=1;
 					anode_connection_arr2[0].animate({path :"M"+(x+284)+" "+(y+25)+"l -143 0 "},500, function(){
 							
 					anode_connection_arr2[0]=paper.path("M "+(x+142)+" "+(y+25)+ "l 0 0").attr({'stroke-width':3});
-					anode_connection_arr2[0].animate({path :"M"+(x+142)+" "+(y+25)+" l 0 33"},1000, function(){
+					anode_connection_arr2[0].animate({path :"M"+(x+142)+" "+(y+25)+" l 0 33"},500, function(){
 						vfyRD1Connect=true;	
 						pinName=2;
 						checkflag2=1;
@@ -395,13 +395,13 @@ checkflag2=1;
 			}
 		}else{
 			if(checkflag1==1 || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 			}else if(anodeflg==1){			
 				anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -23 0 "},500, function(){
 				
 				anode_connection_arr2[0]=paper.path("M "+(x+142)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x+142)+" "+(y-19)+" l 0 76"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x+142)+" "+(y-19)+" l 0 76"},500, function(){
 					vfyRD1Connect=true;
 					pinName=2;
 	//				checkflag2=1;
@@ -417,11 +417,11 @@ terminalRD2.click(function(){
 d2Flag=1;
 checkflag3=1;
 if(verifyAconnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 }else{
-	if (diodSelection==0){
+	if (diodSelection==0){ 
 		if(checkflag1==1 || checkflag2==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 		}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -430,7 +430,7 @@ if(verifyAconnect==true){
 				anode_connection_arr2[0].animate({path :"M"+(x+284)+" "+(y+25)+"l -158 0 "},500, function(){
 						
 				anode_connection_arr2[0]=paper.path("M "+(x+127)+" "+(y+25)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x+127)+" "+(y+25)+" l 0 33"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x+127)+" "+(y+25)+" l 0 33"},500, function(){
 					vfyRD2Connect=true;	
 					pinName=3;
 //					checkflag3=1;
@@ -441,13 +441,13 @@ if(verifyAconnect==true){
 				
 	}else{
 			if(checkflag1==1 || checkflag2==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 			}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -38 0 "},500, function(){
 				
 				anode_connection_arr2[0]=paper.path("M "+(x+127)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x+127)+" "+(y-19)+" l 0 76"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x+127)+" "+(y-19)+" l 0 76"},500, function(){
 					vfyRD2Connect=true;
 					pinName=3;
 //					checkflag3=1;
@@ -464,11 +464,11 @@ terminalRD3.click(function(){
 	checkflag4=1;
 	d3Flag=1;
 if(verifyAconnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 }else{
 	if (diodSelection==0){
 			if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 			}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -477,7 +477,7 @@ if(verifyAconnect==true){
 				anode_connection_arr2[0].animate({path :"M"+(x+284)+" "+(y+25)+"l -174 0 "},500, function(){
 						
 				anode_connection_arr2[0]=paper.path("M "+(x+111)+" "+(y+25)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x+111)+" "+(y+25)+" l 0 33"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x+111)+" "+(y+25)+" l 0 33"},500, function(){
 				vfyRD3Connect=true;
 					pinName=4;
 //					checkflag4=1;
@@ -489,13 +489,13 @@ if(verifyAconnect==true){
 	}else{
 	
 			if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag5==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 			}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -54.5 0 "},500, function(){
 				
 				anode_connection_arr2[0]=paper.path("M "+(x+111)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x+111)+" "+(y-19)+" l 0 76"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x+111)+" "+(y-19)+" l 0 76"},500, function(){
 					vfyRD3Connect=true;	
 					pinName=4;
 //					checkflag4=1;
@@ -512,11 +512,11 @@ terminalRD4.click(function(){
 	checkflag5=1;
 	d4Flag=1;
 if(verifyAconnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 }else{	
 	if (diodSelection==0){
 			if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 			}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -525,10 +525,10 @@ if(verifyAconnect==true){
 				anode_connection_arr2[0].animate({path :"M"+(x+284)+" "+(y+25)+"l -275.2 0 "},500, function(){
 						
 				anode_connection_arr2[0]=paper.path("M "+(x+10)+" "+(y+25)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x+10)+" "+(y+25)+" l 0 92"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x+10)+" "+(y+25)+" l 0 92"},500, function(){
 				
 				anode_connection_arr2[0]=paper.path("M "+(x+10)+" "+(y+116)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x+10)+" "+(y+116)+" l 15 0"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x+10)+" "+(y+116)+" l 15 0"},500, function(){
 					vfyRD4Connect=true;	
 					pinName=5;
 //					checkflag5=1;
@@ -539,16 +539,16 @@ if(verifyAconnect==true){
 			}	
 	}else{
 			if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag6==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 			}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -171.3 0 "},500, function(){
 				
 				anode_connection_arr2[0]=paper.path("M "+(x-6)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x-6)+" "+(y-19)+" l 0 136.2"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x-6)+" "+(y-19)+" l 0 136.2"},500, function(){
 				
 				anode_connection_arr2[0]=paper.path("M "+(x-6)+" "+(y+116)+ "l 0 0").attr({'stroke-width':3});
-				anode_connection_arr2[0].animate({path :"M"+(x-6)+" "+(y+116)+" l 30 0"},1000, function(){
+				anode_connection_arr2[0].animate({path :"M"+(x-6)+" "+(y+116)+" l 30 0"},500, function(){
 					vfyRD4Connect=true;
 					pinName=5;
 //					checkflag5=1;
@@ -566,11 +566,11 @@ terminalRD5.click(function(){
 	checkflag6=1;
 	d5Flag=1;
 if(verifyAconnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 }else{
 	if (diodSelection==0){
 		if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 		}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -593,7 +593,7 @@ if(verifyAconnect==true){
 		}
 	}else{
 		if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag7==1 || checkflag8==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 		}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -171.3 0 "},500, function(){
@@ -621,11 +621,11 @@ terminalRD6.click(function(){
 	checkflag7=1;
 	d6Flag=1;
 if(verifyAconnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 }else{	
 	if (diodSelection==0){
 		if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag8==1){
-			alert("Click on 'Check Connection' Button.");		
+			toastr.info("Click on 'Check Connection' Button.");		
 		}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -648,7 +648,7 @@ if(verifyAconnect==true){
 		}
 	}else{
 		if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag8==1){
-			alert("Click on 'Check Connection' Button.");		
+			toastr.info("Click on 'Check Connection' Button.");		
 		}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -171.3 0 "},500, function(){
@@ -675,11 +675,11 @@ terminalRD7.click(function(){
 	checkflag8=1;
 d7Flag=1;
 if(verifyAconnect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 }else{
 	if (diodSelection==0){
 		if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 		}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+283)+" "+(y-15)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+283)+" "+(y-15)+"l 0 40 "},500, function(){
@@ -702,7 +702,7 @@ if(verifyAconnect==true){
 		}
 	}else{
 		if(checkflag1==1 ||  checkflag2==1  || checkflag3==1 || checkflag4==1 || checkflag5==1 || checkflag6==1 || checkflag7==1){
-				alert("Click on 'Check Connection' Button.");		
+				toastr.info("Click on 'Check Connection' Button.");		
 		}else if(anodeflg==1){
 				anode_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
 				anode_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -171.3 0 "},500, function(){
@@ -788,10 +788,10 @@ terminalRC0.click(function(){
 c0Flag=1;
 inputCheckFlag1=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag2==1 || inputCheckFlag3==1 || inputCheckFlag4==1 || inputCheckFlag5==1 || inputCheckFlag6==1 || inputCheckFlag7==1 || inputCheckFlag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3 ,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -42 0"},500, function(){
@@ -808,10 +808,10 @@ terminalRC1.click(function(){
 c1Flag=1;
 inputCheckFlag2=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag1==1 || inputCheckFlag3==1 || inputCheckFlag4==1 || inputCheckFlag5==1 || inputCheckFlag6==1 || inputCheckFlag7==1 || inputCheckFlag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3 ,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -20 0"},500, function(){
@@ -839,10 +839,10 @@ terminalRC2.click(function(){
 c2Flag=1;
 inputCheckFlag3=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag1==1 || inputCheckFlag2==1 || inputCheckFlag4==1 || inputCheckFlag5==1 || inputCheckFlag6==1 || inputCheckFlag7==1 || inputCheckFlag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -20 0"},500, function(){
@@ -870,10 +870,10 @@ terminalRC3.click(function(){
 	c3Flag=1;
 	inputCheckFlag4=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag1==1 || inputCheckFlag2==1 || inputCheckFlag3==1 || inputCheckFlag5==1 || inputCheckFlag6==1 || inputCheckFlag7==1 || inputCheckFlag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -20 0"},500, function(){
@@ -901,10 +901,10 @@ terminalRC4.click(function(){
 	c4Flag=1;
 inputCheckFlag5=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag1==1 || inputCheckFlag2==1 || inputCheckFlag3==1 || inputCheckFlag4==1 || inputCheckFlag6==1 || inputCheckFlag7==1 || inputCheckFlag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -20 0"},500, function(){
@@ -938,10 +938,10 @@ terminalRC5.click(function(){
 	c5Flag=1;
 	inputCheckFlag6=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag1==1 || inputCheckFlag2==1 || inputCheckFlag3==1 || inputCheckFlag4==1 || inputCheckFlag5==1 || inputCheckFlag7==1 || inputCheckFlag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -20 0"},500, function(){
@@ -975,10 +975,10 @@ terminalRC6.click(function(){
 	c6Flag=1;
 	inputCheckFlag7=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag1==1 || inputCheckFlag2==1 || inputCheckFlag3==1 || inputCheckFlag4==1 || inputCheckFlag5==1 || inputCheckFlag6==1 || inputCheckFlag8==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -20 0"},500, function(){
@@ -1012,10 +1012,10 @@ terminalRC7.click(function(){
 	c7Flag=1;
 	inputCheckFlag8=1;
 if(vfySwitchConnect==true){
-	alert("Already Connected.");
+	toastr.success("Already Connected.");
 }else{
 		if(inputCheckFlag1==1 || inputCheckFlag2==1 || inputCheckFlag3==1 || inputCheckFlag4==1 || inputCheckFlag5==1 || inputCheckFlag6==1 || inputCheckFlag7==1){
-				alert("Click on 'Check Connection' Button.");
+				toastr.info("Click on 'Check Connection' Button.");
 			}else if(switchCircleFlag==1){
 				StoT_connection_arr2[0]=paper.path("M "+(x+304)+" "+(y+118)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+304)+" "+(y+118)+"l -20 0"},500, function(){
@@ -1116,16 +1116,16 @@ checkStatus.click(function(){
 //		$("#plot").html("");
 //		$("#plot").prop("hidden",false);
 //		start();
-		alert("Connection Established Successfully.Now Click on Switch.");	
+		toastr.success("Connection Established Successfully.Now Click on Switch.");	
 		switchpress=paper.text(x+365,y+3,"Click and Hold the Switch").attr({'font-size':14});
 		arrowImg=paper.image("images/downArrowIMG.gif",x+385,y+13,50, 40);	
 		
 	}else if(RcircleFlag==0 && cathodFlag==0){
-		alert("First Establish Cathode Connection.")
+		toastr.warning("First Establish Cathode Connection.")
 	}else if(anodeflg!=1 && pinVal!=pinName || IpinVal!=inputpinName){
-		alert("Connect the pin properly.")
+		toastr.warning("Connect the pin properly.")
 	}else{
-		alert("Wrong Connection. Please Try Again.");
+		toastr.warning("Wrong Connection. Please Try Again.");
 	}
 });
 
@@ -1144,7 +1144,7 @@ switchTopImg.mousedown( function() {
 		//myInterval = setInterval(blink, 100); 
 		
 	}else{
-		alert("Please Check Connection Status.");
+		toastr.warning("Please Check Connection Status.");
 	}
  })
 
@@ -1163,7 +1163,7 @@ switchTopImg.mouseup( function() {
 	$("#plot").prop("hidden",false);
 		reset();		
 	}else{
-		alert("Please Check Connection Status.");
+		toastr.warning("Please Check Connection Status.");
 	}
 	
  })
@@ -1173,7 +1173,7 @@ switchTopImg.mouseup( function() {
 function TtoVDDGRconnectionforDiod1(){
 	var anode_connection_arr11=[];
 	if(vfyRc0Connect==true || vfyRc1Connect==true || vfyRc2Connect==true || vfyRc3Connect==true || vfyRc4Connect==true || vfyRc5Connect==true || vfyRc6Connect==true || vfyRc7Connect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 	}else{
 			if(switchCircleFlag==1 && c0Flag==1){
 				//pin1
@@ -1328,7 +1328,7 @@ function createPopup(x, y, message) {
 function TtoAconnectionforRDiod2(){
 	var anode_connection_arr1=[];
 	if(vfyRD0Connect==true || vfyRD1Connect==true || vfyRD2Connect==true || vfyRD3Connect==true || vfyRD4Connect==true || vfyRD5Connect==true || vfyRD6Connect==true || vfyRD7Connect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 	}else{
 			if(anodeflg==1 && d0Flag==1 ){
 				//pin1
@@ -1474,7 +1474,7 @@ function TtoAconnectionforRDiod2(){
 function TtoAconnection(){
 	var anode_connection_arr1=[];
 	if(vfyRD0Connect==true || vfyRD1Connect==true || vfyRD2Connect==true || vfyRD3Connect==true || vfyRD4Connect==true || vfyRD5Connect==true || vfyRD6Connect==true || vfyRD7Connect==true){
-		alert("Already Connected.");
+		toastr.success("Already Connected.");
 	}else{
 			
 			if(anodeflg==1 && d0Flag==1){
