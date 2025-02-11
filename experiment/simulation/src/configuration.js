@@ -156,7 +156,7 @@ $("#inputPinName").change(function(){
 		$("body").css("padding","0px 0px 0px 0px");	
 		inputPinVal =parseInt( $("#inputPinName").val());
 		if(inputPinVal<=0){
-			alert("Select Input Pin.");
+			toastr.warning("Select Input Pin.");
 		}else{		  
 		  $("#outputPinName").prop("disabled",false);			  
  		  $("#inputPinName").prop("disabled",true);	 
@@ -169,7 +169,7 @@ $("#outputPinName").change(function(){
 		$("body").css("padding","0px 0px 0px 0px");	
 		outputPinVal = $("#outputPinName").val();
 		if(outputPinVal<=0){
-			alert("Select Output Pin.");
+			toastr.warning("Select Output Pin.");
 		}else{		  
 		  $("#switchConfig").prop("disabled",false);			  
  		  $("#outputPinName").prop("disabled",true);
@@ -182,7 +182,7 @@ $("#switchConfig").change(function(){
 		$("body").css("padding","0px 0px 0px 0px");	
 		dCycleVal = $("#switchConfig").val();
 		if(dCycleVal<=0){
-			alert("Select Output Pin.");
+			toastr.warning("Select Output Pin.");
 		}else{
 		   $("#ledtype").prop("disabled",false);		  		  			  
  		  $("#switchConfig").prop("disabled",true);
@@ -193,7 +193,7 @@ $("#ledtype").change(function(){
 	$("body").css("padding","0px 0px 0px 0px");	
 		ledTypeVAl = $("#ledtype").val(); 
 		if(ledTypeVAl<=0){
-			alert("Select LED Connection Type.");
+			toastr.warning("Select LED Connection Type.");
 		}else{	
 		  $("#generateCode").prop("disabled",false);
 		  $("#compileCode").prop("disabled",false);
@@ -320,7 +320,7 @@ $("#downloadCode").click(function () {
 //			$("#modelMsg").html("<b class='boldTextGreen'>Download Code File Successfully.</b>");	
 	}else{
 //		$("#modelMsg").html("<b class='boldTextGreen'>Please Generate The Code First and Then You Can Download Code File.</b>");
-		alert("Please Generate The Code First and Then You Can Download Code File.")
+		toastr.warning("Please Generate The Code First and Then You Can Download Code File.")
 	}
 
  
