@@ -172,7 +172,9 @@
 
 
 <script>
-var setRedflag=false;	
+var setRedflag=false;		
+var statusFlag=false;	
+
 	var clk_hex = "0x00";
 	var state_p=0;
 		var data = [{
@@ -253,7 +255,7 @@ var config = {
 		   interval_plot = setInterval(function() {
 		  time += dt;
 				  
-		  if(setRedflag == true){
+		  if(setRedflag == true && statusFlag == true){
 			y = 5;
 			LedImg2=paper.image("images/ON_aquaLed2.png", 285, 95, 85, 85);	
 		  }else{
@@ -278,9 +280,10 @@ var config = {
 	  function reset() {
 			clearInterval(time);
 			clearInterval(interval_plot);
-		    Plotly.deleteTraces('plot',0);	 
+		    //Plotly.deleteTraces('plot',0);	 
 		      var time = 0;
 		      state_p=1;
+				start(1,0,1);
 		      
 		  } 
 		function pause(){

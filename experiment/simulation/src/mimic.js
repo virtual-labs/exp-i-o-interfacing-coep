@@ -160,6 +160,8 @@ resetimg.click(function(){
 		paper.clear();
 		mimic(iPinSelect,oPinSelect,switchConfigSelect,LedConSelect);	
 		$("#plot").prop("hidden",false);
+		setRedflag=false;		
+		statusFlag=false;
 		reset();
 	
 })
@@ -1105,8 +1107,7 @@ function blink() {
 
 var switchpress='';
 var arrowImg;
-var arrowImg1;		
-var statusFlag=false;
+var arrowImg1;
 checkStatus.click(function(){
 	
 //console.log("anodeflg"+anodeflg+", pinval="+pinVal+ ",pinname =" + pinName+", RcircleFlag="+RcircleFlag+", cathodFlag="+cathodFlag +", IpinVal="+IpinVal+", inputpinName="+inputpinName);
