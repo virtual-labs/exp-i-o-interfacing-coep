@@ -1130,19 +1130,17 @@ checkStatus.click(function(){
 });
 
 
-start(1,0,1);
 
+var setRedflag=false;
 var myInterval;
 switchTopImg.mousedown( function() { 
 	setRedflag=true;
 	if(statusFlag==true){
-		onTime1 = 1000/1000;
-		offTime1 = 0/1000;
 		switchpress.hide();
 		arrowImg.hide();
 		switchTopImg.animate({transform: ['t',0, 10]}, 100);
 		$("#plot").prop("hidden",false);
-		start(interval_plot1,onTime1,offTime1);
+		start(interval_plot1,onTime1,offTime1,);
 		//myInterval = setInterval(blink, 100); 
 		
 	}else{
@@ -1152,20 +1150,18 @@ switchTopImg.mousedown( function() {
 
 switchTopImg.mouseup( function() {
 	cntVal=1;
-	
+	//clearInterval(myInterval);
+//		console.log("..............");	
 	setRedflag=false;
 	if(statusFlag==true){
-		onTime1 = 0/1000;
-		offTime1 = 1000/1000;
 		switchpress.show();
 		arrowImg.show();		
 
-	//var LedImg1=paper.image("images/offDiode.png", 285, 95, 85, 85);
+	var LedImg1=paper.image("images/offDiode.png", 285, 95, 85, 85);
 //		var arrowImg11=paper.rect(x+389,y+7,40, 45).attr({'stroke':'#fff','fill':'#fff'});
 		switchTopImg.animate({transform: ['t',0, 0]}, 100);
 	$("#plot").prop("hidden",false);
-	start(interval_plot1,onTime1,offTime1);
-		//reset();		
+		reset();		
 	}else{
 		toastr.warning("Please Check Connection Status.");
 	}
