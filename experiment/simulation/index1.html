@@ -171,8 +171,7 @@
 </div>
 
 
-<script>
-var setRedflag=false;	
+<script>	
 	var clk_hex = "0x00";
 	var state_p=0;
 		var data = [{
@@ -183,13 +182,11 @@ var setRedflag=false;
 	    color: '#80CAF6'
 	  }
 	}];
-	
 var config = {
     showLink: false,
-    displayModeBar: true,
+    displayModeBar: false,
     modeBarButtonsToRemove: ['toImage']
 };
-
 	var layout = {
 	  responsive: true,
 	  width: 600,
@@ -214,64 +211,69 @@ var config = {
 	var dt = 0.01;
 	var y = 1;
 	state_p=0;
-	  
-	Plotly.newPlot('plot', data, layout, config);
-	var interval_plot;
-	time = 0; y = 0, dt = 0.01;
-	function start(interval_plot,offTime,onTime){				  
-		  data = [{
-		  x: [],
-		  y: [],
-		  mode: 'lines',
-		  line: {
-			color: '#80CAF6'
-		  }
-		}];
-		
-		var config = {
-		showLink: false,
-		displayModeBar: true,
-		modeBarButtonsToRemove: ['toImage']
-		};
-		
-		var layout = {
-		  responsive: true,
-		  width: 600,
-		  height: 250,
-		  title: 'Square Wave Graph',
-		  xaxis: {
-			range: [0, 10],
+	  Plotly.newPlot('plot', data, layout, config);
+	  var interval_plot;
+	  function start(interval_plot1,offTime1,onTime1){
+		 interval_plot = interval_plot1;
+		  offTime = offTime1;
+		  onTime = onTime1+offTime;
+	  time = 0; y = 0, dt = 0.01;
+	  data = [{
+	  x: [],
+	  y: [],
+	  mode: 'lines',
+	  line: {
+	    color: '#80CAF6'
+	  }
+	}];
+var config = {
+    showLink: false,
+    displayModeBar: false,
+    modeBarButtonsToRemove: ['toImage']
+};
+	var layout = {
+	  responsive: true,
+	  width: 600,
+	  height: 250,
+	  title: 'Square Wave Graph',
+	  xaxis: {
+	    range: [0, 10],
+	    title: 'Time (ms)'
+	  },
+	  yaxis: {
+	    range: [-0.2, 6.4],
+	    title: 'Volatge (in V)'
+	  }
+	};
+	 
+	// var LedImg1=paper.image("images/offDiode.png", 285, 95, 0, 0);
+	// var  LedImg2=paper.image("images/onDiodePreview.png", 285, 95, 0, 0);
+	  Plotly.newPlot('plot', data, layout, config);
+	   interval_plot = setInterval(function() {
+	  time += dt;
+	//   console.log(time);
+	  if (time % (onTime) > (offTime)) {
+	    y = 5;
+//	     LedImg2.remove();
+// 	    LedImg1=paper.image("images/offDiode.png", 285, 95, 85, 85);
+	  } else {    
+	    y = 5;
+//	     LedImg1.remove();
+	    LedImg2=paper.image("images/ON_aquaLed2.png", 285, 95, 85, 85);
+	    
+//	     Ledcircle.attr({ fill:'red'});
+	  }
+	  Plotly.extendTraces('plot', {x: [[time]], y: [[y]]}, [0]);
+	  if (time > 10) {
+	    Plotly.relayout('plot', {
+	      xaxis: {
+	        range: [time-10, time],
 			title: 'Time (ms)'
-		  },
-		  yaxis: {
-			range: [-0.2, 6.4],
-			title: 'Volatge (in V)'
-		  }
-		};
-		 
-		Plotly.update('plot', data, layout, config);
-		   interval_plot = setInterval(function() {
-		  time += dt;
-				  
-		  if(setRedflag == true){
-			y = 5;
-			LedImg2=paper.image("images/ON_aquaLed2.png", 285, 95, 85, 85);	
-		  }else{
-			y = 0;
-			LedImg2=paper.image("images/offDiode.png", 285, 95, 85, 85);	
-		  }
-		  
-		  Plotly.extendTraces('plot', {x: [[time]], y: [[y]]}, [0]);
-		  if (time > 10) {
-			Plotly.relayout('plot', {
-			  xaxis: {
-				range: [time-10, time],
-				title: 'Time (ms)'
-			  }
-			});
-		  }
+	      }
+	    });
+	  }
 	}, dt*100);
-	//start_e =0;
+	start_e =0;
 
 	}
 		
