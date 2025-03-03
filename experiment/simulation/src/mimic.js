@@ -1117,6 +1117,8 @@ checkStatus.click(function(){
 //		$("#plot").html("");
 //		$("#plot").prop("hidden",false);
 //		start();
+		start(1,0,1);
+		
 		toastr.success("Connection Established Successfully.Now Click on Switch.");	
 		switchpress=paper.text(x+365,y+3,"Click and Hold the Switch").attr({'font-size':14});
 		arrowImg=paper.image("images/downArrowIMG.gif",x+385,y+13,50, 40);	
@@ -1131,7 +1133,7 @@ checkStatus.click(function(){
 });
 
 
-start(1,0,1);
+
 
 var myInterval;
 switchTopImg.mousedown( function() { 

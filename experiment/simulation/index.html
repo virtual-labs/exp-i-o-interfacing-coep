@@ -188,7 +188,7 @@ var statusFlag=false;
 	
 var config = {
     showLink: false,
-    displayModeBar: true,
+    displayModeBar: false,
     modeBarButtonsToRemove: ['toImage']
 };
 
@@ -232,7 +232,7 @@ var config = {
 		
 		var config = {
 		showLink: false,
-		displayModeBar: true,
+		displayModeBar: false,
 		modeBarButtonsToRemove: ['toImage']
 		};
 		
@@ -274,16 +274,26 @@ var config = {
 		  }
 	}, dt*100);
 	//start_e =0;
-
+	
 	}
-		
+		 //Plotly.extendTraces('plot', {x: [[time]], y: [[y]]}, [0]);
 	  function reset() {
 			clearInterval(time);
 			clearInterval(interval_plot);
-		    //Plotly.deleteTraces('plot',0);	 
-		      var time = 0;
+		   // Plotly.deleteTraces('plot',0);
+				//var data1 = [{
+				//  x: [],
+				//  y: [],
+				//  mode: 'lines',
+				//  line: {
+				//	color: '#80CAF6'
+				// }
+				//}];		
+		      var time = 0;		
+			//Plotly.newPlot('plot', data1, layout, config);	
 		      state_p=1;
 				start(1,0,1);
+				
 		      
 		  } 
 		function pause(){
