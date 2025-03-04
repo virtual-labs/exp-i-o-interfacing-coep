@@ -37,6 +37,7 @@ In the current Sinking Operation, Current flows into the device. In this method,
 ### Current Sourcing Operation
 
 ![*](images/LED_push_button_sourcing.png)
+
 Fig: LED (current sourcing) and switch (press to low interfacing with microcontroller)
 
 In the current Sourcing Operation, Current flows out of the device. In this method, the Button is PUSHED-TO-LOW and starts blinking.
