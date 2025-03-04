@@ -30,11 +30,14 @@ In this Example schematic, the push button is connected to pin RC0 of PORT C and
 
 ![8](images/LEC_Puch_button_sinking1.png)
 
+Fig: LED (Current Sink) and switch (press to high interfacing with microcontroller) 
+
 In the current Sinking Operation, Current flows into the device. In this method, the Button is PUSHED-TO-HIGH and LED starts blinking. 
 
 ### Current Sourcing Operation
 
 ![*](images/LED_push_button_sourcing.png)
+Fig: LED (current sourcing) and switch (press to low interfacing with microcontroller)
 
 In the current Sourcing Operation, Current flows out of the device. In this method, the Button is PUSHED-TO-LOW and starts blinking.
 
