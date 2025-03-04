@@ -1,0 +1,133 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1) What is the purpose of the push button in this project?",
+      "answers": {
+        "a": "To provide power to the LED",
+        "b": "To control the blinking frequency of the LED",
+        "c": "To turn the LED on and off",
+        "d": "None of the above"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2) What is the role of the pull-up resistor in this project?",
+      "answers": {
+        "a": "To protect the microcontroller from overvoltage",
+        "b": "To provide a path to ground for the LED",
+        "c": "To debounce the push button",
+        "d": "To limit the current through the LED"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "3) How did you determine the appropriate value for the pull-up resistor?",
+      "answers": {
+        "a": "By trial and error",
+        "b": "By consulting the datasheet for the microcontroller",
+        "c": "By measuring the voltage across the resistor",
+        "d": " None of the above"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "4) What debouncing technique did you use in this project?",
+      "answers": {
+        "a": "Software debouncing",
+        "b": "Hardware debouncing",
+        "c": " Both A and B",
+        "d": " None of the above"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "5) What is the purpose of the delay function in this project?",
+      "answers": {
+        "a": "To ensure that the LED blinks at a steady frequency",
+        "b": "To prevent the microcontroller from overheating",
+        "c": " To provide a delay between pressing the push button and activating the LED",
+        "d": " None of the above"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "6) How would you modify the code to increase the blinking frequency of the LED?",
+      "answers": {
+        "a": "Decrease the value of the delay function",
+        "b": "Increase the value of the delay function",
+        "c": " Modify the code that reads the push button input",
+        "d": " None of the above"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "7) What is the purpose of the resistor in series with the LED?",
+      "answers": {
+        "a": "To limit the current through the LED",
+        "b": "To protect the microcontroller from overvoltage",
+        "c": "To provide a path to ground for the LED",
+        "d": "None of the above"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "8) What challenges did you face during this project, and how did you overcome them?",
+      "answers": {
+        "a": "Poor contact between the push button and the breadboard, solved by checking and fixing the wiring",
+        "b": "Incorrectly calculating resistor values, solved by referring to the datasheet and online resources",
+        "c": " Both A and B",
+        "d": " None of the above"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "9) What is the main advantage of using a microcontroller to control the LED blinking?",
+      "answers": {
+        "a": "Precise control over the blinking frequency",
+        "b": "More reliable than using discrete components",
+        "c": "Can easily be reprogrammed for different applications",
+        "d": " All of the above"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "10) How could you modify the circuit to control multiple LEDs with the push button?",
+      "answers": {
+        "a": "Use a larger resistor in series with the LEDs",
+        "b": "Add more push buttons to the circuit",
+        "c": " Use a shift register or multiplexer to control the LEDs",
+        "d": " None of the above"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
